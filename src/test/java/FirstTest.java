@@ -26,7 +26,7 @@ public class FirstTest {
         driver.get(site);
         Wait<WebDriver> wait = new WebDriverWait(driver, 5, 1000);
         wait.until(ExpectedConditions.visibilityOf(
-                driver.findElement(By.xpath("//*[substring(@for,string-length(@for) - string-length('ato')+1) 'ato']"))));
+                driver.findElement(By.xpath("//*[contains(text(),'ДМС')]"))));
 //        System.out.println(driver.findElement(By.cssSelector("div:last-of-type")).isSelected());
 
 //        WebElement element = driver.findElement(By.partialLinkText("ДМС"));
